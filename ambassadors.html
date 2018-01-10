@@ -1,0 +1,654 @@
+<link rel="stylesheet" type="text/css" href="/templates/blacks.co.uk/_css/slick.css?v=756">
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+ 
+<style type="text/css">
+
+/* ------- LIFE OUTDOORS TEMPLATE OVERIDES   ----- */
+
+body{
+   font-family:inherit;     
+    }
+#logo > a{
+    font-size:100%;
+}
+
+#thumbs p{
+    line-height:unset;
+}
+
+img {
+    height: auto;
+    display: unset;
+    width:auto; 
+}
+
+.scroller img {
+    width:50px;
+    height:50px;
+}
+
+#thumbs {
+    background-image: none;
+}
+    
+#thumbs p {
+    font-family: inherit;
+    text-transform:none;
+    }
+
+
+    span.title {
+        font-size:22px;
+    }
+
+a
+#profiles-grid {
+    overflow: visible;
+}
+
+@media screen and (min-width: 1025px) {
+	#thumbs span.title{ font-size:120%; }
+}
+
+@media screen and (min-width: 1025px) {
+	#thumbs p{ font-size:100%; }
+}
+
+@media screen and (max-width: 580px) {
+	#logo > a{ font-size:93%; }
+}
+
+
+@media screen and (min-width: 900px){
+span.title {margin: 0 auto; }
+}
+
+
+/* --- PAGE CSS -- */
+.wrap{ margin:0 auto; overflow-x: hidden;}
+
+p:first{font-size:120%;}
+
+.top-bar{
+background-color:#2f2d31;
+opacity: 0.6;}    
+ 
+ #content{ background-color:rgba(0,0,0,0.3);} 
+
+#content2{ margin: 0; background-color: rgba(0,0,0,0.6);}
+
+#content2 p{color:#fff;}
+.title{ font-weight: 900; font-size: 136%; color: #fc6719;}
+
+#content2 p{color:#fff;}
+.title2{ font-weight: 900; font-size: 100%; color: #fc6719;}
+
+#contentSection{ 
+background-color: #3e3c42;
+ z-index: 0;
+margin-top: 205px;}
+
+div#top.group {
+background-color:#04f0e2;
+padding: 12px;
+}
+
+#top .group img {color:#000;}
+
+button#vidmute, button#vidpause, div#eq {
+background-color:#04f0e2;
+border:0;
+float:right;
+outline:0;
+padding: 10px;
+}
+
+.scroller{    
+text-align: center;
+padding: 10px;
+}
+
+.headermain{    
+text-align: center;
+width:100%;
+}
+    
+    .headermain img {
+        width:100%;
+        max-width:769px;
+    }
+
+.MeetAmbassadors1, .MeetAmbassadors {text-align:center;}
+.MeetAmbassadors img{max-width:310px; margin-top: 20px;margin-bottom: 20px;}
+    
+    div.MeetAmbassadors1 img:first-child {padding-top: 44px;}
+
+.grid-item{ width: 48%; padding: 0 1%; }
+#style-grid .grid-item{ margin-bottom: 2%; }
+    
+    
+@media screen and (min-width: 650px) {
+	.grid-item{ width: 31.333%; padding: 0 1%; }
+}
+
+/* free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 48%; padding: 0 1%; }
+.size-1of3 { width: 31.333%; padding: 0 1%; }
+
+
+/* --------clear fix------ */
+.grid:after,.grid-item:after {
+content: '';
+display: block;
+clear: both;
+}
+
+.grid-item {
+float: left;
+}
+
+.grid-item a{text-decoration:none;}
+
+img[src*="//bat.bing.com/action/"] {
+display:none;
+}
+
+      
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+
+/* ----- CONTENT DIV STYLES ------*/
+
+
+.grid{text-align:center;}
+
+.grid-image {
+vertical-align: top;
+}
+
+.grid-image img {
+    width: 310px;
+    padding: 10px;
+}
+
+.grid-text {
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    bottom: 289px;
+    left: 337px;
+    width: 55%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.grid-text p{
+padding:20px;
+}
+ 
+
+.section-content {
+    width: 100%;
+    max-height: 290px;
+    margin-bottom: 5px;
+    max-width: 1280px;
+    margin: 0 auto;
+  
+}
+
+
+
+
+a.morelink, a.morelink.less {color:#f06f1f;}
+    
+    /* --- Background Video ---- */
+    video { 
+    position: fixed;;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+
+}
+.stopfade { 
+   opacity: .5;
+}
+    
+  /* ---- SLIDER ------ */
+    .slider {
+        width:100%;
+        margin: 35px auto;
+        max-width:90%;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+    }
+    
+  
+
+    .slick-prev:hover{
+    color:orange;
+     }
+    .slick-prev:before, .slick-next:before {
+    color: #fc6719;
+}
+
+
+
+ .slick-prev, .slick-next, .slick-arrow{
+    opacity: 1;
+} 
+
+
+.slick-next {
+     right: 25px; 
+    margin-right: -50px;
+}
+
+.slick-prev {
+     left: 25px; 
+    margin-left: -50px;
+}
+
+.slick-slide{
+    height:auto;
+    outline:none;
+}
+
+ .blockImg {
+   text-align: center;
+} 
+
+ #footer #get-involved ul {
+    width:auto;
+} 
+
+#footer {border-top: none;}
+    
+    /* ---- FORM ---- */
+    
+
+    #gform{max-width: 500px; margin: 0 auto; padding:20px; color: black;     padding-top: 0;}
+    #gform label {color:#fff;}
+    #name, #email, #message {width: 100%; border-radius:15px;}
+    #form-section{margin-top:40px;}
+    #form-section p{text-align:center; line-height:29px;}
+    #form-section span{font-size:180%; color:#fc6719;font-weight: 900;}
+    #get-involved {padding: 40px 0 37px; background-color:#fc6719;}
+    
+    .pure-button{
+    width: 100%;
+    background-color: #fc6719;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 900;
+}
+    .pure-button:hover{background-color:#fc6719;}
+    
+    
+    .pure-form input:not([type]) {border:1px solid #fff;}
+    #get-involved img {
+    width: 32px;
+}
+    
+    #footer #get-involved ul {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+    
+    
+    /* -------- Media querys ------ */
+    
+       @media only screen and (max-width: 776px) {
+    .section-content {
+        max-height:100%;
+        text-align: center;
+    }
+}
+ 
+    
+    @media only screen and (max-width: 776px) {
+    .grid-text {
+        display:block;
+        position:static !important;
+        width:100%;
+    }
+}
+
+  
+   @media only screen and (max-width: 776px) {
+    #content2 p {
+       font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 760px){
+#bgvid, #vidpause, #vidmute, #eq {
+     display: unset; 
+}
+}
+
+@media screen and (max-width: 420px){
+p{
+   font-size:100%;
+}
+} 
+
+@media screen and (max-width: 580px){
+.slick-slider .slick-track, .slick-slider .slick-list .slick-prev .slick-prev, .slick-next .slick-arrow .slider {
+   display:none;
+}
+} 
+
+@media screen and (max-width: 580px){
+.slider {
+   display:none;
+}
+} 
+
+@media screen and (min-width: 580px){
+.blockImg  {
+   display:none;
+}
+} 
+
+</style>
+
+
+
+<div class="wrap">
+    
+    <!-- Background Video -->
+<video poster="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ambassador-back.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, -->
+  <source src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ambassador-video.mp4" type="video/mp4">
+<source src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ambassador.webm">
+
+
+</video>
+    
+
+
+
+
+<div class ="headermain">
+  <a href="#content"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ambassadorgraphic.png" alt="Blacks Ambassadors"></a>  
+
+</div>
+
+    
+
+<p style="color:#ffffff; text-align:center;"> The Blacks ambassadors are the people we trust to push our gear to the limit. They’ve scaled peaks,<br>explored arctic landscapes and made homes in the harshest conditions. They take our equipment and <br>put it through its’ paces, all in the name of progress.
+ </p>
+
+<div class ="scroller">
+ <a href="#content2"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/features/lifeoutdoors/more-arrow.png" alt="[arrow]"></a> 
+
+</div>
+<!-- /top-bar -->
+    
+<!--- Main Content SECTION-->
+<br>
+
+<br>
+<div id="content">
+<div class ="MeetAmbassadors1">
+<img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ambassadormeet.png" alt="[Title]">
+</div>
+<div class="section-content" id="content-area">
+  <div class="grid-image"><a class="test" href="http://www.blacks.co.uk/blog/2017/07/an-interview-with-ian-finch-blacks-ambassador"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ianfinchcircle.png" alt="Ian Finch Image"></a></div>  
+ 
+<div class = "grid-text">
+
+<p><span class="more">
+<span class="title"><strong><b>IAN FINCH</b></strong></span><br>Former Royal Marine Commando Ian Finch, is an indigenous cultural researcher, expedition guide and mountain leader whose been travelling to remote environments for over 4 years. His passion in life is driven by discovery, adventure, the mechanics of nature and the human journey.  <a class="test" href="http://www.blacks.co.uk/blog/2017/07/an-interview-with-ian-finch-blacks-ambassador"><span class="title2">Read More</span></a>
+
+</span>
+</p>
+</div>
+</div>
+    <br><br><br>
+<div class="section-content">
+<div class="grid-image"><a href="https://www.blacks.co.uk/blog/2017/08/meet-the-meek-family-blacks-ambassadors/"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/meekcircle.png" alt="Meek Family Image"></a></div>
+<div class = "grid-text">
+<p><span class="more">
+<span class="title"><strong><b>THE MEEK FAMILY</b></strong></span><br>The Meek Family are a tight family unit who live life to its fullest, trying to discover and bond in the outdoors as much as they possibly can. In 2014, parents Tim and Kelly packed in their teaching jobs in order to show their two children, Amy and Ella, the true meaning of life. They set out to discover all that the British Isles could teach them - and almost 4 years later, they’re still in search of discovery.  <a href="https://www.blacks.co.uk/blog/2017/08/meet-the-meek-family-blacks-ambassadors/"><span class="title2">Read More</span></a>
+</span></p>
+</div>
+</div>
+
+
+<br><br>
+</div> 
+<!-- /Content1 -->
+
+<!-- SLIDER CONTENT SECTION  -->
+
+ <div id="content2">
+
+	<section id="thumbs" class="group">
+		<div id="profiles-grid">
+                <div class="grid">
+
+<div class ="MeetAmbassadors"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/features.png" alt="[Title]">
+</div>
+
+ <section class="regular slider">
+       <div>
+      <a href="https://www.blacks.co.uk/blog/2017/08/the-language-of-the-wild-ian-finch-blacks-ambassador/"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/finch-languageof.png">
+       <p><span class="title">The Language of the Wild with Ian Finch</span><br/>Filmed in the stunning Peak District, The Language of the Wild is the story of Ian Finch's personal connection to the wilderness.</p></a>
+       </div>
+
+       <div>
+      <a href="/blog/2017/11/pudsey-s-pop-up-cafe-for-children-in-need"><img src="/templates/blacks.co.uk/Ambassadors/Ambassador-Pudsey.png">
+       <p><span class="title">Pudsey’s Pop-Up Café with the Meek Family</span><br/>For Children in Need this year, Countryfile have been encouraging people to arrange a ramble in the outdoors and get sponsorship for their efforts in aid of the charity.</p></a>
+       </div>
+     
+    <div>
+      <a href="https://www.blacks.co.uk/blog/2017/07/an-interview-with-ian-finch-blacks-ambassador/"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/IanFinchInterview.png">
+       <p><span class="title">An Interview with Ian Finch | Blacks Ambassador</span><br/>We spoke to Ian to discuss his life's work, and properly welcome him as the newest member of the Blacks Ambassador programme.</p></a>
+    </div>
+
+    <div>
+<a href="https://www.blacks.co.uk/blog/2017/08/meet-the-meek-family-blacks-ambassadors/">
+      <img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/MeekMeet.png">
+       <p><span class="title">Meet The Meek Family | Blacks Ambassadors</span><br/>We sat down with the Meek Family to discuss their ethos and welcome them as members of the Blacks Ambassador programme.</p></a>
+    </div>
+     
+     
+    <div>
+      <a href="https://www.blacks.co.uk/blog/2017/05/the-rules-of-wild-camping"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ianfinchwildcamping.png">
+      <p><span class="title">Ian Finch | The Rules of Wild Camping</span></a><br/>Ian Finch explains the rules and regulations of wild camping across the UK.</p></a>
+    </div>
+
+  <div>
+<a href="https://www.blacks.co.uk/blog/2017/09/united-outdoors-the-meek-family-blacks-ambassadors/">
+      <img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/snowdon-meek.png">
+       <p><span class="title">United Outdoors with The Meek Family</span><br/>United Outdoors is a poignant and nostalgic look at why The Meek family feel such a connection to the great outdoors</p></a>
+       </div>
+
+    <div>
+<a href="https://www.blacks.co.uk/blog/2017/08/the-meek-family-review-our-camping-essentials/">
+      <img src="http://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/meek-tent-image.png">
+       <p><span class="title">The Meek Family Review Our Camping Picks</span><br/>On a recent trip with Blacks, The Meek Family were asked to review a few camping items that they wouldn't normally use. Here are their thoughts.</p></a>
+    </div>
+
+      <div>
+<a href="https://www.blacks.co.uk/blog/2017/09/where-the-river-flows-the-meek-family-blacks-ambassadors">
+      <img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/beddgelert-meek.png">
+       <p><span class="title">Where The River Flows with The Meek Family</span><br/>Where The River Flows is the story of the Meek family and their personal connections to the outdoors.</p></a>
+       </div>
+
+  </section>
+
+
+  <section class="blockImg">
+    <div>
+      <a href="https://www.blacks.co.uk/blog/2017/07/an-interview-with-ian-finch-blacks-ambassador/"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/IanFinchInterview.png">
+       <p><span class="title">An Interview with Ian Finch | Blacks Ambassador</span><br/>We spoke to Ian to discuss his life's work, and properly welcome him as the newest member of the Blacks Ambassador programme.</p></a>
+    </div>
+    <div>
+<a href="https://www.blacks.co.uk/blog/2017/08/meet-the-meek-family-blacks-ambassadors/">
+      <img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/MeekMeet.png">
+       <p><span class="title">Meet The Meek Family | Blacks Ambassadors</span><br/>We sat down with the Meek Family to discuss their ethos and welcome them as members of the Blacks Ambassador programme.</p></a>
+    </div>
+    <div>
+      <a href="https://www.blacks.co.uk/blog/2017/05/the-rules-of-wild-camping"><img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/ianfinchwildcamping.png">
+      <p><span class="title">Ian Finch | The Rules of Wild Camping</span><br/>Ian Finch explains the rules and regulations of wild camping across the UK.</p></a>
+    </div>
+    <div>
+<a href="https://www.blacks.co.uk/blog/2017/08/the-meek-family-review-our-camping-essentials/">
+      <img src="https://www.blacks.co.uk/templates/blacks.co.uk/Ambassadors/MeekCamping.png">
+       <p><span class="title">The Meek Family Review Our Camping Picks</span><br/>On a recent trip with Blacks, The Meek Family were asked to review a few camping items that they wouldn't normally use. Here are their thoughts.</p></a>
+    </div>
+
+
+</section>
+
+</div>
+</div>
+
+</section>  
+</div> 
+
+
+
+	<div id="form-section">
+        
+      <p> <span>Want to get involved with the #BlacksAmbassadors?</span><br/> </p>
+             <!-- Email us your story at <b><a href="mailto:blacksambassadors@blacks.co.uk" manual_cm_re="LifeOutdoors-_-Footer-_-EmailUs" style="border-bottom: 2px solid #fff; padding-bottom: 2px;">blacksambassadors@blacks.co.uk</a></b>  -->
+      <p> Every month we'll look to highlight a person from our community of followers who deserves to be recognised as a Blacks Ambassador.<br><b> To enter, please share your adventure with us below:</b></p> 
+
+       
+		
+        <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbwlo9AfmZnoYD7sCUU8GLwn07nCL-MxeR87hedwPzNRfviORwM/exec">
+<!--
+          <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="mailto:steven.mcinerney@jdplc.com">
+-->
+
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="Name" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us your story..."></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email">Your Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="youremail@email.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i> APPLY</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+        
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+        
+        
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        
+  
+        
+        
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+        
+			
+</div>
+
+
+</div><!-- /wrap div -->
+
+
+<!-- JQUERY AND SITE SCRIPTS ISOTAPE-->
+  <script src="/templates/blacks.co.uk/_js/jquery.min.js?v=756"></script>    
+<script src="/templates/blacks.co.uk/_js/slick.min.js?v=756"></script> 
+
+    
+<script>
+
+// -------SLICK SLIDER SCRIPT --------
+$(document).ready( function() {
+   $.noConflict();
+    $(".regular").slick({
+        autoplay:true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+
+
+//VIDEO BACKGROUND SCRIPT
+		var vid = document.getElementById("bgvid");
+		vid.volume = 0;
+		pauseButton = document.getElementById("vidpause");
+		muteButton = document.getElementById("vidmute");
+		function vidFade() {
+		    vid.classList.add("stopfade");
+		}
+		vid.addEventListener('ended', function() {
+			document.getElementById("eq").style.display = 'none';
+			pauseButton.innerHTML = '<img src="/templates/blacks.co.uk/features/lifeoutdoors/video/icons/play.png" alt="Play" />';
+			// only functional if "loop" is removed 
+			vid.pause();
+			// to capture IE10
+			vidFade();
+			setTimeout(function(){ vid.currentTime = 0; }, 1500);
+		});
+		
+        });
+</script>
